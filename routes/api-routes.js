@@ -11,7 +11,7 @@ router.get("/check/:password", (req, res) => {
     if (pw.match(/[a-z]+/)) {securityLevel++} else {message.negativeMessage.push("Please add lowercase letter")}
     if (pw.match(/[A-Z]+/)) {securityLevel++} else {message.negativeMessage.push("Please add capital letter")}
     if (pw.match(/[0-9]+/)) {securityLevel++} else {message.negativeMessage.push("Please add at least 1 number")}
-    if (pw.match(/[$@&!=-+.,;:]+/)) {securityLevel++} else {message.negativeMessage.push("Please add special characters $ @ # & !")}
+    if (pw.match(/[$@&!=+.,;:-]+/)) {securityLevel++} else {message.negativeMessage.push("Please add special characters $ @ # & !")}
     if (pw.length > 8) {securityLevel++, message.positiveMessage.push("Minimum length requirement passed")}
     if (pw.length < 8) {securityLevel--, message.negativeMessage.push("Must have atleast 8 Characters to pass minimum length requirement")}
     if (pw.length > 15) {securityLevel++, message.positiveMessage.push("15 Character password +++")}
