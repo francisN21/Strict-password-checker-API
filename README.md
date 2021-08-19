@@ -1,24 +1,31 @@
 # Strict password checker
 
+Simple REST API for password checking.
+Get request only. Works with axios and fetch.
 
+``
 
-Root URL: 
+Root URL: https://strict-password-checker-api.herokuapp.com/check/
 
 # Example:
 
 ```javascript
-fetch()
+fetch("https://strict-password-checker-api.herokuapp.com/check/test")
       .then(res => res.json())
       .then(data => console.log(data))
+      or
+axios.get("https://strict-password-checker-api.herokuapp.com/check/${test})
 ```
 
 ## response:
 ![](assets/test.png)
 
 ```javascript
-fetch()
+fetch("https://strict-password-checker-api.herokuapp.com/check/TrustMeiAmaDecentPassword2134!!")
       .then(res => res.json())
       .then(data => console.log(data))
+      or
+axios.get("https://strict-password-checker-api.herokuapp.com/check/${TrustMeiAmaDecentPassword2134!!})
 ```
 
 ## response:

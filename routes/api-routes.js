@@ -23,7 +23,8 @@ router.get("/check/:password", (req, res) => {
   } catch (error) {
     res.send("can only take $ @ # & ! as a special character" + error)
   }
-
 })
+
+
 
 module.exports = router;
