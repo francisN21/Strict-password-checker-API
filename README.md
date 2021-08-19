@@ -3,11 +3,13 @@
 Simple REST API for password checking.
 Get request only. Works with axios and fetch.
 
-``
-<img src="https://img.shields.io/badge/LICENSE-mit-green"/>
-![License](LICENSE)
+
+License under <img src="https://img.shields.io/badge/LICENSE-mit-green"/>
+
 
 Root URL: https://strict-password-checker-api.herokuapp.com/check/
+
+get request to `https://strict-password-checker-api.herokuapp.com/check/${query}`
 
 # Example:
 
