@@ -4,7 +4,7 @@
 
 Root URL: 
 
-Example:
+# Example:
 
 ```javascript
 fetch()
@@ -12,8 +12,8 @@ fetch()
       .then(data => console.log(data))
 ```
 
-response:
-
+## response:
+![](assets/test.png)
 
 ```javascript
 fetch()
@@ -21,10 +21,11 @@ fetch()
       .then(data => console.log(data))
 ```
 
-response:
+## response:
+![](assets/test1.png)
 
+## Password checker checks for:
 
-Password checker checks for:
 <ul>
 <li>lower case a-z</li>
 <li>upper case a-z</li>
